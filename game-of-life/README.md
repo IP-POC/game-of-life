@@ -12,7 +12,7 @@ population.
 3. Any live cell with two or three live neighbors lives on to the next generation. 
 4. Any dead cell with exactly three live neighbors becomes a live cell. 
 5. A cell’s neighbors are those cells which are horizontally, vertically or 
-diagonally adjacent. Most cells will 
+diagonally adjacent. Most cells will have eight neighbors. Cells placed on the edge of the grid will have fewer.
 
 ## Features
   * Loop through states: updated state becomes initial state and recalculate 
