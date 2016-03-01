@@ -21,7 +21,7 @@ public class GameOfLifeApp {
 	private static final String Y_KEY = "y";
 	protected static final String GRID_DEFAULT_STATE_CONFIG = "GridDefaultState.config";
 	private static final int MIN_ARG = 1;
-	private static final String GRIG_STATE_FILE_KEY = "-f";
+	private static final String GRID_STATE_FILE_KEY = "-f";
 	private static final String HELP_KEY = "-help";
 
 	/*
@@ -50,7 +50,7 @@ public class GameOfLifeApp {
 	protected void launchAppCommand(String[] args) throws GridException {
 		Path inStateFilePath;
 		int curArg = 0;
-		if (args.length >= MIN_ARG && GRIG_STATE_FILE_KEY.equalsIgnoreCase(args[curArg])) {
+		if (args.length >= MIN_ARG && GRID_STATE_FILE_KEY.equalsIgnoreCase(args[curArg])) {
 			if (args.length > MIN_ARG && args[curArg + 1] != null && !args[curArg + 1].isEmpty()) {
 				inStateFilePath = Paths.get(args[curArg + 1]);
 			} else {
@@ -92,7 +92,7 @@ public class GameOfLifeApp {
 	}
 
 	protected void showHelp() {
-		System.out.println("Use option '" + GRIG_STATE_FILE_KEY + "' to set input file for initial state of grid.");
+		System.out.println("Use option '" + GRID_STATE_FILE_KEY + "' to set input file for initial state of grid.");
 		System.out.println("Example: -f initialstate.config");
 		System.out.println("Note: If you don't provide the file name then application will assume default 8x6 initial grid.");
 	}
