@@ -19,7 +19,7 @@ diagonally adjacent. Most cells will have eight neighbors. Cells placed on the e
   * Support arbitrarily sized grids setup from input file. The 'O' character represents live cell. And any other character represents dead cell.
 
 ## Running the application
- To run this application you need to install Java SE Runtime Environment 7 or newer. To build this project you need also to install Apache Maven. You can find instruction for Apache Maven installation here [https://maven.apache.org/install.html]. 
+ To run this application you need to install Java SE Runtime Environment 7 or newer. To build this project you need also to install Apache Maven and JDK 7 or newer. You can find instruction for Apache Maven installation here [https://maven.apache.org/install.html]. 
  Clone this repository.  
  Run "mvn package" in the project root directory to create the game-of-life console application.  
  Then run this application directly by name:  
